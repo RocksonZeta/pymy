@@ -1,0 +1,2 @@
+# pymy
+python mysql utils
