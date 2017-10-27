@@ -1,10 +1,3 @@
-# pymy
-python mysql utils
-
-
-## how use , please look source code
-
-```python
 # -*- coding:utf-8 -*- 
 import mysqlx
 mysqlx.dataSources.append(mysqlx.DataSource(host='localhost',
@@ -19,4 +12,3 @@ def get(con = None,con1=None):
 
 if '__main__' == __name__ :
 	get()
-```
