@@ -1,6 +1,10 @@
 # pymy
 python mysql utils
 
+## install
+```
+pip install git+https://github.com/RocksonZeta/pymy.git
+```
 
 ## how use , please look source code
 

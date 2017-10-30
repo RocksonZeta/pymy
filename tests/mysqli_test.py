@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*- 
-import mysqlx
+import pymy.mysqlx as mysqlx
 mysqlx.dataSources.append(mysqlx.DataSource(host='localhost',
 							user='root',
 							password='yourpass',
