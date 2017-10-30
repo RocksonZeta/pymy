@@ -1,12 +1,12 @@
 # pymy
 python mysql utils
 
-## install
+## installation
 ```
 pip install git+https://github.com/RocksonZeta/pymy.git
 ```
 
-## how use , please look source code
+## usage
 
 ```python
 # -*- coding:utf-8 -*- 
@@ -19,7 +19,12 @@ mysqlx.dataSources.append(mysqlx.DataSource(host='localhost',
 							))
 @mysqlx.mysqli()
 def get(con = None,con1=None):
-	print(con.q("select * from users limit 1"))
+	#sql to list
+	print(con.q("select * from users limit 10"))
+	#sql to dict , fetch first row from resultset
+	print(con.q1("select * from users limit 1"))
+	#sql to value, fetch the first value of first row from resultset
+	print(con.qv("select count(*) from users limit 1"))
 
 if '__main__' == __name__ :
 	get()
